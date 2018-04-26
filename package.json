@@ -1,0 +1,41 @@
+{
+    "name": "koa-csv",
+    "version": "1.0.0",
+    "description": "CSV files serving as json REST API middleware for Koa",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint --fix .",
+        "test": "mocha --reporter spec"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/quick-sort/koa-csv.git"
+    },
+    "keywords": [
+        "csv",
+        "koa",
+        "middleware"
+    ],
+    "author": "quicksort",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/quick-sort/koa-csv/issues"
+    },
+    "homepage": "https://github.com/quick-sort/koa-csv#readme",
+    "dependencies": {
+        "csvtojson": "^1.1.9",
+        "debug": "^3.1.0",
+        "http-errors": "^1.6.3"
+    },
+    "devDependencies": {
+        "eslint": "^4.19.1",
+        "eslint-config-standard": "^11.0.0",
+        "eslint-plugin-import": "^2.11.0",
+        "eslint-plugin-node": "^6.0.1",
+        "eslint-plugin-promise": "^3.7.0",
+        "eslint-plugin-standard": "^3.1.0",
+        "koa": "^2.5.0",
+        "mocha": "^5.1.1",
+        "supertest": "^3.0.0"
+    }
+}
