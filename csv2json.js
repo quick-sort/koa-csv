@@ -30,10 +30,10 @@ async function csv2json (file, options = {}) {
             }).on('done', error => {
                 if (error) {
                     let err = null
-                    if (error.message === 'File not exists') {
+                    if (error.message.indexOf('File does not exist') > -1) {
                         err = createError(404, error)
                     } else {
-                        err = createError(500, error)
+                        err = createError(400, error)
                     }
                     reject(err)
                 } else {
